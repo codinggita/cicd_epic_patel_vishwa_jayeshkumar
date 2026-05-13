@@ -1,357 +1,429 @@
-# 🚀 StackOrbit Backend
+<div align="center">
 
-> Enterprise-grade CI/CD,Infrastructure Knowledge Platform Backend
+<img src="https://img.shields.io/badge/StackOrbit-Workflow%20Knowledge%20Platform-111827?style=for-the-badge&logo=github&logoColor=white" width="100%"/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js" />
-  <img src="https://img.shields.io/badge/Express.js-Framework-black?style=for-the-badge&logo=express" />
-  <img src="https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge&logo=mongodb" />
-  <img src="https://img.shields.io/badge/JWT-Authentication-orange?style=for-the-badge" />
-</p>
+# 🌌 StackOrbit
 
----
+### *Explore • Search • Manage • Scale*
 
-# 📌 Overview
+A modern full-stack platform built to organize workflow resources, YAML templates, infrastructure guides, analytics, monitoring systems, and troubleshooting documentation through a clean and scalable interface.
 
-StackOrbit Backend is a scalable, production-grade backend system built for managing:
+<br/>
 
-* CI/CD Workflows
-* Kubernetes Infrastructure Knowledge
-* Docker & Terraform Guides
-* YAML Validation & Formatting
-* Monitoring & Analytics
-* Search & Recommendation Systems
-* Workflow Versioning & Cloning
-* Notifications & Collaboration
-* Authentication & Authorization
-* Infrastructure Debugging APIs
+[![Frontend](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)]()
+[![Backend](https://img.shields.io/badge/Backend-Render-46e3b7?style=for-the-badge&logo=render)]()
+[![Database](https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)]()
+[![Demo](https://img.shields.io/badge/YouTube-Demo-red?style=for-the-badge&logo=youtube)]()
 
-The backend follows enterprise architecture principles inspired by modern DevOps platforms and SaaS systems.
+<br/>
 
----
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=flat-square&logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
-# 🏗️ Backend Architecture
-
-StackOrbit Backend follows:
-
-* ✅ MVC Architecture
-* ✅ Clean Architecture
-* ✅ Service Layer Pattern
-* ✅ Repository Pattern
-* ✅ Modular Monolith Architecture
-* ✅ Feature-Based Folder Structure
-* ✅ RESTful API Standards
-* ✅ Scalable Backend Design
+</div>
 
 ---
 
-# ⚡ Tech Stack
+# 📘 Introduction
 
-## Backend Core
+**StackOrbit** is a scalable MERN stack application designed for developers and teams to access workflow resources, reusable YAML configurations, monitoring references, analytics insights, troubleshooting content, and infrastructure-related documentation from one centralized platform.
 
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
+The project focuses on:
 
-## Authentication & Security
-
-* JWT Authentication
-* bcrypt
-* Helmet
-* CORS
+- ⚡ Fast search experience
+- 📚 Structured knowledge organization
+- 📄 YAML tools & templates
+- 📊 Analytics dashboards
+- 🔐 Secure authentication system
+- 👥 Role-based access management
+- 🔔 Notification & collaboration system
+- 📱 Fully responsive modern UI
 
 ---
 
-# 📂 Project Structure
+# 🌐 Project Links
+
+| Resource | Status |
+|---|---|
+| 🌍 Live Website | Coming Soon |
+| 🚀 Backend API | Coming Soon |
+| 📦 Frontend Repository | Coming Soon |
+| 🗄 Backend Repository | Coming Soon |
+| 🎥 Demo Video | Coming Soon |
+| 📄 API Documentation | Coming Soon |
+
+---
+
+# ⚙️ Technology Stack
+
+## 🖥 Backend Technologies
+
+| Technology | Usage |
+|---|---|
+| Node.js | Runtime environment |
+| Express.js | API framework |
+| MongoDB Atlas | Database |
+| Mongoose | ODM |
+| JWT | Authentication |
+| bcryptjs | Password hashing |
+| express-validator | Request validation |
+| Helmet.js | Security |
+| Morgan | Logging |
+
+---
+
+## 🎨 Frontend Technologies
+
+| Technology | Usage |
+|---|---|
+| React 18 | Frontend library |
+| Vite | Build tool |
+| Redux Toolkit | State management |
+| React Router DOM | Routing |
+| Axios | API requests |
+| Tailwind CSS | Styling |
+| Formik + Yup | Form validation |
+| Recharts | Data visualization |
+
+---
+
+# ✨ Key Features
+
+## 👤 User Features
+
+- Secure user authentication
+- Profile management
+- Search workflows & templates
+- Advanced filtering system
+- Bookmark favorite workflows
+- Notifications center
+- Comment & review support
+- YAML validation & formatting
+- Dark/light theme support
+- Mobile responsive UI
+
+---
+
+## 🛡 Admin Features
+
+- User management panel
+- Analytics overview dashboard
+- Manage workflows & templates
+- Access logs & reports
+- Monitor system activity
+- Security management
+- Backup management tools
+
+---
+
+# 📂 Main API Categories
+
+## 🔄 Workflow APIs
+
+```http
+GET    /api/v1/workflows
+POST   /api/v1/workflows
+PUT    /api/v1/workflows/:id
+DELETE /api/v1/workflows/:id
+PATCH  /api/v1/workflows/:id/archive
+POST   /api/v1/workflows/:id/run
+```
+
+---
+
+## 🔍 Search APIs
+
+```http
+GET /api/v1/search
+GET /api/v1/search/autocomplete
+GET /api/v1/search/fuzzy
+GET /api/v1/search/filter
+GET /api/v1/search/trending
+```
+
+---
+
+## 📄 YAML APIs
+
+```http
+POST /api/v1/yaml/validate
+POST /api/v1/yaml/lint
+POST /api/v1/yaml/format
+POST /api/v1/yaml/compare
+GET  /api/v1/yaml/templates
+```
+
+---
+
+## 📊 Analytics APIs
+
+```http
+GET /api/v1/analytics/summary
+GET /api/v1/analytics/performance
+GET /api/v1/analytics/trending
+GET /api/v1/analytics/security
+```
+
+---
+
+## 🔐 Authentication APIs
+
+```http
+POST /api/v1/auth/register
+POST /api/v1/auth/login
+POST /api/v1/auth/logout
+GET  /api/v1/auth/profile
+```
+
+---
+
+# 🗂 Folder Structure
+
+## Backend
 
 ```bash
-stackorbit-backend/
+backend/
 │
 ├── src/
-│   ├── modules/
-│   │   ├── auth/
-│   │   ├── users/
-│   │   ├── workflows/
-│   │   ├── analytics/
-│   │   ├── monitoring/
-│   │   ├── notifications/
-│   │   ├── search/
-│   │   ├── yaml/
-│   │   ├── infra/
-│   │   ├── admin/
-│   │   ├── comments/
-│   │   ├── reviews/
-│   │   ├── bookmarks/
-│   │   ├── debug/
-│   │   └── health/
-│   │
 │   ├── config/
-│   ├── database/
+│   ├── controllers/
 │   ├── middlewares/
-│   ├── repositories/
+│   ├── models/
+│   ├── routes/
 │   ├── services/
 │   ├── validators/
-│   ├── utils/
-│   ├── events/
-│   ├── queues/
-│   ├── sockets/
-│   ├── cache/
-│   ├── logs/
-│   ├── cron/
-│   ├── docs/
-│   ├── tests/
-│   └── app.js
+│   └── utils/
 │
-├── docker/
-├── k8s/
-├── scripts/
-├── .github/
-├── swagger/
-├── postman/
-└── README.md
+├── server.js
+├── package.json
+└── .env
 ```
 
 ---
 
-# 🔥 Core Features
-
-## ✅ Workflow Management
-
-* Create workflows
-* Clone workflows
-* Version control
-* Archive & restore workflows
-* Workflow metrics & logs
-* Trigger/cancel runs
-
-## ✅ Kubernetes & Infrastructure APIs
-
-* Kubernetes Guides
-* Docker Guides
-* Helm Guides
-* Terraform Guides
-* AWS/GCP/Azure APIs
-
-## ✅ YAML Engine
-
-* YAML Validation
-* YAML Formatting
-* YAML Comparison
-* YAML Merge APIs
-* YAML ↔ JSON Conversion
-
-## ✅ Search Engine
-
-* Full-text search
-* Fuzzy search
-* Search suggestions
-* Advanced filtering
-* Trending searches
-
-## ✅ Authentication System
-
-* JWT Authentication
-* Refresh Tokens
-* RBAC
-* Protected Routes
-* Password Hashing
-* 2FA Support
-
-## ✅ Monitoring & Analytics
-
-* Pipeline Analytics
-* Failure Analytics
-* Performance Metrics
-* Security Metrics
-* Monitoring APIs
----
-
-# 🧠 MongoDB Design
-
-The backend is optimized for MongoDB using:
-
-* Embedded Documents
-* Referenced Collections
-* Aggregation Pipelines
-* Query Optimization
-* Indexed Fields
-* Pagination & Filtering
-* Dynamic Search Queries
-
----
-
-# 🔐 Security Features
-
-* JWT Authentication
-* Refresh Token Flow
-* Role-Based Access Control
-* Password Hashing with bcrypt
-* API Rate Limiting
-* Helmet Security
-* CORS Protection
-* Secure Environment Variables
-* Global Error Handling
-
----
-
-# 📡 API Features
-
-* RESTful API Design
-* API Versioning (`/api/v1`)
-* Standardized API Responses
-* Advanced Filtering
-* Pagination
-* Sorting
-* Search Functionality
-* Aggregation Pipelines
-
----
-
-# 📊 Monitoring & Logging
-
-* Request Logging
-* Error Logging
-* API Metrics
-* Health Monitoring
-* Prometheus Metrics
-* Grafana Dashboards
-
----
-
-# ⚙️ Installation
-
-## 1️⃣ Clone Repository
+## Frontend
 
 ```bash
-git clone https://github.com/your-username/stackorbit-backend.git
+frontend/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── features/
+│   ├── hooks/
+│   ├── pages/
+│   ├── services/
+│   ├── store/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── vite.config.js
+└── package.json
 ```
 
-## 2️⃣ Move Into Project
+---
+
+# 🗄 Database Collections
 
 ```bash
-cd stackorbit-backend
+users
+workflows
+templates
+notifications
+comments
+reviews
+bookmarks
+analytics
+logs
 ```
 
-## 3️⃣ Install Dependencies
+---
+
+# 🧱 System Architecture
+
+```text
+ ┌─────────────────────┐
+ │     React Client    │
+ │    Vite + Redux     │
+ └──────────┬──────────┘
+            │
+         REST APIs
+            │
+ ┌──────────▼──────────┐
+ │   Node + Express    │
+ │      Backend        │
+ └──────────┬──────────┘
+            │
+      MongoDB Atlas
+```
+
+---
+
+# 🚀 Installation Guide
+
+## Clone Repository
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/stackorbit.git
+
+cd stackorbit
+```
+
+---
+
+# Backend Setup
+
+```bash
+cd backend
+
 npm install
-```
 
-## 4️⃣ Setup Environment Variables
+cp .env.example .env
 
-Create a `.env` file:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret
-JWT_REFRESH_SECRET=your_refresh_secret
-REDIS_URL=your_redis_url
-NODE_ENV=development
-```
-
-## 5️⃣ Start Development Server
-
-```bash
 npm run dev
 ```
 
----
-
-# 🧪 Testing
-
-The backend includes:
-
-* Unit Tests
-* API Tests
-* Integration Tests
-* Middleware Tests
-* Repository Tests
-
-Run tests:
+Backend URL:
 
 ```bash
-npm run test
+http://localhost:5000
 ```
 
 ---
 
-# 📮 API Documentation
-
-API documentation available via:
-
-* Swagger/OpenAPI
-* Postman Collection
-
----
-
-# 🐳 Docker Support
-
-Run using Docker:
+# Frontend Setup
 
 ```bash
-docker-compose up --build
+cd frontend
+
+npm install
+
+cp .env.example .env
+
+npm run dev
+```
+
+Frontend URL:
+
+```bash
+http://localhost:5173
 ```
 
 ---
 
-# ☸️ Kubernetes Support
+# 🔑 Environment Variables
 
-Includes:
+## Backend `.env`
 
-* Deployments
-* Services
-* Ingress
-* ConfigMaps
-* Secrets
-* Horizontal Pod Autoscaling
+```env
+PORT=5000
 
----
+MONGO_URI=your_mongodb_uri
 
-# 🚀 CI/CD Ready
+JWT_SECRET=your_secret_key
 
-Supports:
+JWT_EXPIRES_IN=7d
 
-* GitHub Actions
-* Docker Builds
-* Automated Testing
-* Kubernetes Deployment Pipelines
+CLIENT_URL=http://localhost:5173
+```
 
 ---
 
-# 📈 Future Scalability
+## Frontend `.env`
 
-The architecture is designed to later evolve into microservices:
-
-* Auth Service
-* Workflow Service
-* Analytics Service
-* Notification Service
-* Search Service
+```env
+VITE_API_BASE_URL=http://localhost:5000/api/v1
+```
 
 ---
 
-# 👨‍💻 Development Principles
+# 📊 Dashboard Highlights
 
-* Clean Code
-* SOLID Principles
-* Separation of Concerns
-* Reusable Utilities
-* Production-Ready Patterns
-* Enterprise Backend Standards
+The platform includes visual dashboards for:
+
+- 📈 Performance insights
+- 🔍 Search analytics
+- 👥 User growth
+- ⚡ Workflow activity
+- 📊 Usage statistics
+- 🛡 Security monitoring
 
 ---
 
-# 🎯 Project Goals
+# 🔒 Security Features
 
-* Practice enterprise backend architecture
-* Implement scalable MongoDB systems
-* Learn production-ready API development
-* Create a resume-worthy flagship project
+- JWT authentication
+- Password hashing using bcryptjs
+- Protected routes
+- Role-based authorization
+- Request validation
+- Secure HTTP headers
+- API rate limiting
+
 ---
 
-# ⭐ StackOrbit
+# 📸 Application Screenshots
 
-> Building scalable infrastructure knowledge systems for modern engineering workflows.
+| Section | Preview |
+|---|---|
+| 🏠 Homepage | Coming Soon |
+| 🔍 Search Page | Coming Soon |
+| 📄 Workflow Details | Coming Soon |
+| 📊 Analytics Dashboard | Coming Soon |
+| 👤 User Profile | Coming Soon |
+| 🛠 Admin Panel | Coming Soon |
+
+---
+
+# 📦 Dataset Link
+
+```text
+https://drive.google.com/file/d/1dmkbDxnzq8HWaFPhu9n6EfEyeC1sb54w/view?usp=drive_link
+```
+
+---
+
+# 🛣 Future Scope
+
+- AI-powered recommendations
+- Real-time collaboration
+- Export configuration files
+- Advanced analytics filters
+- Team workspaces
+- Mobile application
+- Multi-language support
+
+---
+
+# 🤝 Contribution Guide
+
+```bash
+git checkout -b feature/feature-name
+
+git commit -m "feat: added new feature"
+
+git push origin feature/feature-name
+```
+
+# 👨‍💻 Developer
+
+<div align="center">
+
+## Vishwa Patel
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/VishwaPatel-29)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vishwa-patel-full-stack-developer-8664473a0/)
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@VishwaPatel-29h)
+
+⭐ Star this repository if you found it useful.
+
+</div>
