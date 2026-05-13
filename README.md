@@ -7,8 +7,6 @@
   <img src="https://img.shields.io/badge/Express.js-Framework-black?style=for-the-badge&logo=express" />
   <img src="https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge&logo=mongodb" />
   <img src="https://img.shields.io/badge/JWT-Authentication-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Docker-Containerization-blue?style=for-the-badge&logo=docker" />
-  <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes" />
 </p>
 
 ---
