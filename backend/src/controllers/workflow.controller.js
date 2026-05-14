@@ -2,129 +2,66 @@ const {
   getAllWorkflows,
   getWorkflowById,
   createWorkflow,
-  updateWorkflowContent,
   deleteWorkflow,
 } = require("../services/workflow.service");
+const { sendResponse } = require("../utils/apiResponse");
+const asyncHandler = require("../utils/asyncHandler");
 const HTTP_STATUS = require("../constants/httpStatus");
 
 /**
  * GET /api/v1/workflows
- * Returns all non-archived workflows.
+ * Returns all non-archived workflows with creator info populated.
  *
- * TODO (future PR): Add pagination, filtering, sorting query params
+ * asyncHandler wraps the function so we don't need try/catch here.
+ * Any thrown error is automatically passed to the global error middleware.
+ *
+ * TODO (future PR): Add pagination, filtering, sorting via query params
  */
-const getAll = async (req, res, next) => {
-  try {
-    const workflows = await getAllWorkflows();
-
-    res.status(HTTP_STATUS.OK).json({
-      success: true,
-      message: "Workflows fetched successfully",
-      data: workflows,
-    });
-  } catch (error) {
-    next(error);
-  }
-};
+const getAll = asyncHandler(async (req, res) => {
+  const workflows = await getAllWorkflows();
+  sendResponse(res, HTTP_STATUS.OK, "Workflows fetched successfully", workflows);
+});
 
 /**
  * GET /api/v1/workflows/:id
- * Returns a single workflow by its ID.
+ * Returns a single workflow by ID with creator info populated.
  */
-const getById = async (req, res, next) => {
-  try {
-    const workflow = await getWorkflowById(req.params.id);
+const getById = asyncHandler(async (req, res) => {
+  const workflow = await getWorkflowById(req.params.id);
 
-    if (!workflow || workflow.isArchived) {
-      return res.status(HTTP_STATUS.NOT_FOUND).json({
-        success: false,
-        message: "Workflow not found",
-      });
-    }
-
-    res.status(HTTP_STATUS.OK).json({
-      success: true,
-      message: "Workflow fetched successfully",
-      data: workflow,
-    });
-  } catch (error) {
-    next(error);
+  if (!workflow || workflow.isArchived) {
+    return sendResponse(res, HTTP_STATUS.NOT_FOUND, "Workflow not found");
   }
-};
+
+  sendResponse(res, HTTP_STATUS.OK, "Workflow fetched successfully", workflow);
+});
 
 /**
  * POST /api/v1/workflows
- * Creates a new workflow. Requires authentication (req.user set by protect middleware).
+ * Creates a new workflow for the authenticated user.
+ * req.user is attached by the protect middleware before this runs.
  *
- * TODO (future PR): Add request body validation
+ * TODO (future PR): Add request body validation before calling service
  */
-const create = async (req, res, next) => {
-  try {
-    const workflow = await createWorkflow(req.body, req.user._id);
-
-    res.status(HTTP_STATUS.CREATED).json({
-      success: true,
-      message: "Workflow created successfully",
-      data: workflow,
-    });
-  } catch (error) {
-    next(error);
-  }
-};
-
-/**
- * PATCH /api/v1/workflows/:id/content
- * Updates only the yamlContent field of a workflow.
- * Separate from a full update to enforce intentional YAML changes.
- *
- * TODO (future PR): Add ownership check
- */
-const updateContent = async (req, res, next) => {
-  try {
-    const { yamlContent } = req.body;
-    const workflow = await updateWorkflowContent(req.params.id, yamlContent);
-
-    if (!workflow) {
-      return res.status(HTTP_STATUS.NOT_FOUND).json({
-        success: false,
-        message: "Workflow not found",
-      });
-    }
-
-    res.status(HTTP_STATUS.OK).json({
-      success: true,
-      message: "Workflow content updated successfully",
-      data: workflow,
-    });
-  } catch (error) {
-    next(error);
-  }
-};
+const create = asyncHandler(async (req, res) => {
+  const workflow = await createWorkflow(req.body, req.user._id);
+  sendResponse(res, HTTP_STATUS.CREATED, "Workflow created successfully", workflow);
+});
 
 /**
  * DELETE /api/v1/workflows/:id
- * Soft-deletes a workflow by archiving it (isArchived = true).
+ * Permanently deletes a workflow from the database.
  *
- * TODO (future PR): Add ownership check (only creator or admin)
+ * TODO (future PR): Add ownership check (only creator or admin can delete)
  */
-const remove = async (req, res, next) => {
-  try {
-    const workflow = await deleteWorkflow(req.params.id);
+const remove = asyncHandler(async (req, res) => {
+  const workflow = await deleteWorkflow(req.params.id);
 
-    if (!workflow) {
-      return res.status(HTTP_STATUS.NOT_FOUND).json({
-        success: false,
-        message: "Workflow not found",
-      });
-    }
-
-    res.status(HTTP_STATUS.OK).json({
-      success: true,
-      message: "Workflow archived successfully",
-    });
-  } catch (error) {
-    next(error);
+  if (!workflow) {
+    return sendResponse(res, HTTP_STATUS.NOT_FOUND, "Workflow not found");
   }
-};
 
-module.exports = { getAll, getById, create, updateContent, remove };
+  sendResponse(res, HTTP_STATUS.OK, "Workflow deleted successfully");
+});
+
+module.exports = { getAll, getById, create, remove };
