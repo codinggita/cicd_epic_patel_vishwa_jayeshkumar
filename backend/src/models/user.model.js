@@ -24,6 +24,20 @@ const userSchema = new mongoose.Schema(
       enum: ["user", "admin"],
       default: "user",
     },
+
+    // Profile fields — optional, added by PATCH /users/me
+    bio: {
+      type:    String,
+      trim:    true,
+      default: "",
+      maxlength: 300,
+    },
+
+    avatar: {
+      type:    String,
+      trim:    true,
+      default: "",
+    },
   },
   { timestamps: true }
 );
