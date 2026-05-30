@@ -57,6 +57,35 @@ const SORT_ORDER = {
   DESC: -1,
 };
 
+// Response messages for workflow operations
+const WORKFLOW_MESSAGES = {
+  FETCHED_ALL: "Workflows fetched successfully",
+  FETCHED: "Workflow fetched successfully",
+  CREATED: "Workflow created successfully",
+  UPDATED: "Workflow updated successfully",
+  REPLACED: "Workflow replaced successfully",
+  DELETED: "Workflow deleted successfully",
+  RANDOM: "Random workflow fetched successfully",
+  HISTORY_FETCHED: "Workflow history fetched successfully",
+  ARCHIVED: "Workflow archived successfully",
+  RESTORED: "Workflow restored successfully",
+  CLONED: "Workflow cloned successfully",
+  LOGS_FETCHED: "Workflow logs fetched successfully",
+  METRICS_FETCHED: "Workflow metrics fetched successfully",
+  RUN_TRIGGERED: "Workflow run triggered successfully",
+  RUN_CANCELLED: "Workflow run cancelled successfully",
+  NOT_FOUND: "Workflow not found",
+};
+
+// Workflow run status
+const RUN_STATUS = {
+  PENDING: "pending",
+  RUNNING: "running",
+  COMPLETED: "completed",
+  FAILED: "failed",
+  CANCELLED: "cancelled",
+};
+
 module.exports = {
   WORKFLOW_CATEGORIES,
   WORKFLOW_DIFFICULTY,
@@ -64,4 +93,6 @@ module.exports = {
   QUERY_LIMITS,
   ALLOWED_SORT_FIELDS,
   SORT_ORDER,
+  WORKFLOW_MESSAGES,
+  RUN_STATUS,
 };
