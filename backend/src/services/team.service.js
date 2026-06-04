@@ -1,5 +1,5 @@
 const Team = require("../models/team.model");
-const { TEAM_MESSAGES } = require("../constants/team.constants");
+const { TEAM_MESSAGES } = require("../config/constants");
 const teamConfig = require("../config/team.config");
 
 /**

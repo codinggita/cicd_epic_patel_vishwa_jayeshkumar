@@ -1,10 +1,5 @@
 const { registerUser, loginUser } = require("../services/auth.service");
-const HTTP_STATUS = require("../constants/httpStatus");
-
-/**
- * POST /api/v1/auth/register
- * Registers a new user and returns their basic info.
- */
+const HTTP_STATUS = require("../config/constants");
 const register = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
@@ -24,10 +19,6 @@ const register = async (req, res, next) => {
   }
 };
 
-/**
- * POST /api/v1/auth/login
- * Logs in a user and returns a JWT token.
- */
 const login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
@@ -48,11 +39,6 @@ const login = async (req, res, next) => {
   }
 };
 
-/**
- * GET /api/v1/auth/profile
- * Returns the profile of the currently logged-in user.
- * This route is protected — req.user is set by auth.middleware.js
- */
 const getProfile = async (req, res, next) => {
   try {
     const user = req.user;

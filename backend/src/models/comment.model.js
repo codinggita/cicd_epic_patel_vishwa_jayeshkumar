@@ -15,7 +15,7 @@
  */
 
 const mongoose = require("mongoose");
-const { COMMENT_CONTENT } = require("../constants/comment.constants");
+const { COMMENT_CONTENT } = require("../config/constants");
 
 const commentSchema = new mongoose.Schema(
   {

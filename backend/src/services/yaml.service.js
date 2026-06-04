@@ -6,7 +6,7 @@
  * for YAML content.
  */
 
-const { YAML_MESSAGES } = require("../constants/yaml.constants");
+const { YAML_MESSAGES } = require("../config/constants");
 
 /**
  * Validates a string to ensure it adheres to standard YAML formatting rules.

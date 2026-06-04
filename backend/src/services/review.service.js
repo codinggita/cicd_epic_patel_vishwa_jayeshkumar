@@ -16,7 +16,7 @@ const Workflow = require("../models/workflow.model");
 const {
   REVIEW_MESSAGES,
   REVIEW_PAGINATION,
-} = require("../constants/review.constants");
+} = require("../config/constants");
 
 // ─── Helper: throw a typed error ─────────────────────────────────────────────
 

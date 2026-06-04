@@ -8,8 +8,8 @@ const {
 } = require("../utils/preferencesFormatter");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { PREFERENCES_MESSAGES } = require("../constants/preferences.constants");
+const HTTP_STATUS = require("../config/constants");
+const { PREFERENCES_MESSAGES } = require("../config/constants");
 
 /**
  * GET /api/v1/preferences

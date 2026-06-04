@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const {
   SHARE_PERMISSIONS,
   SHARE_DEFAULTS,
-} = require("../constants/share.constants");
+} = require("../config/constants");
 
 /**
  * Share Schema

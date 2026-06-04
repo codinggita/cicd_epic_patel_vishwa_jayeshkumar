@@ -16,7 +16,7 @@ const Workflow = require("../models/workflow.model");
 const {
   COMMENT_MESSAGES,
   COMMENT_PAGINATION,
-} = require("../constants/comment.constants");
+} = require("../config/constants");
 
 // ─── Helper: throw a typed error ─────────────────────────────────────────────
 

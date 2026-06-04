@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { ARCHIVE_DEFAULTS } = require("../constants/archive.constants");
+const { ARCHIVE_DEFAULTS } = require("../config/constants");
 
 /**
  * Archive Schema

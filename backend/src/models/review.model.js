@@ -21,7 +21,7 @@ const mongoose = require("mongoose");
 const {
   REVIEW_RATING,
   REVIEW_CONTENT,
-} = require("../constants/review.constants");
+} = require("../config/constants");
 
 const reviewSchema = new mongoose.Schema(
   {

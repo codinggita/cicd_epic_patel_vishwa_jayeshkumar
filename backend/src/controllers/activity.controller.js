@@ -4,8 +4,8 @@ const {
 } = require("../services/activity.service");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { ACTIVITY_MESSAGES } = require("../constants/activity.constants");
+const HTTP_STATUS = require("../config/constants");
+const { ACTIVITY_MESSAGES } = require("../config/constants");
 
 /**
  * POST /api/v1/activities

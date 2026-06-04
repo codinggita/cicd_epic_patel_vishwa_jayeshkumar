@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { PREFERENCES_DEFAULTS, THEME_OPTIONS, LANGUAGE_OPTIONS } = require("../constants/preferences.constants");
+const { PREFERENCES_DEFAULTS, THEME_OPTIONS, LANGUAGE_OPTIONS } = require("../config/constants");
 
 /**
  * Preferences Schema

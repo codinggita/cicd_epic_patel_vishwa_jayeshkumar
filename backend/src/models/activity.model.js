@@ -3,7 +3,7 @@ const {
   ACTIVITY_ACTIONS,
   RESOURCE_TYPES,
   ACTIVITY_DEFAULTS,
-} = require("../constants/activity.constants");
+} = require("../config/constants");
 
 /**
  * Activity Schema

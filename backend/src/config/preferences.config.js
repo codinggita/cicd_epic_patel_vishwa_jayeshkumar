@@ -1,4 +1,4 @@
-const { PREFERENCES_DEFAULTS, THEME_OPTIONS, LANGUAGE_OPTIONS } = require("../constants/preferences.constants");
+const { PREFERENCES_DEFAULTS, THEME_OPTIONS, LANGUAGE_OPTIONS } = require("../config/constants");
 
 const preferencesConfig = {
   defaultTheme: PREFERENCES_DEFAULTS.THEME,

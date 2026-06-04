@@ -17,7 +17,7 @@
 
 const Workflow = require("../models/workflow.model");
 const { buildSort } = require("../utils/sortBuilder");
-const { QUERY_LIMITS } = require("../constants/workflow.constants");
+const { QUERY_LIMITS } = require("../config/constants");
 
 // ─── Shared base filter ───────────────────────────────────────────────────────
 

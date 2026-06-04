@@ -1,5 +1,5 @@
 const Settings = require("../models/settings.model");
-const { SETTINGS_DEFAULTS } = require("../constants/settings.constants");
+const { SETTINGS_DEFAULTS } = require("../config/constants");
 
 /**
  * Fetches settings for a specific user.

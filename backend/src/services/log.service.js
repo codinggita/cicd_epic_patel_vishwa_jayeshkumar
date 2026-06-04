@@ -1,4 +1,4 @@
-const { MOCK_LOGS } = require("../constants/log.constants");
+const { MOCK_LOGS } = require("../config/constants");
 const {
   formatLogs,
   formatLatestLogs,

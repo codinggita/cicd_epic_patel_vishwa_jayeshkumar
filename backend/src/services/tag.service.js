@@ -11,7 +11,7 @@
  */
 
 const Tag = require("../models/tag.model");
-const { TAG_MESSAGES } = require("../constants/tag.constants");
+const { TAG_MESSAGES } = require("../config/constants");
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 

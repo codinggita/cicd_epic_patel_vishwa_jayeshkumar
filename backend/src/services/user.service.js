@@ -14,7 +14,7 @@ const { USER_PUBLIC_FIELDS } = require("../utils/selectUserFields");
 const {
   USER_MESSAGES,
   USER_UPDATABLE_FIELDS,
-} = require("../constants/user.constants");
+} = require("../config/constants");
 
 // ─── Helper: throw a typed error ─────────────────────────────────────────────
 

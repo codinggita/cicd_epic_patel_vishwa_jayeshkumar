@@ -10,8 +10,8 @@ const {
 } = require("../utils/dashboardFormatter");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { DASHBOARD_MESSAGES } = require("../constants/dashboard.constants");
+const HTTP_STATUS = require("../config/constants");
+const { DASHBOARD_MESSAGES } = require("../config/constants");
 
 /**
  * GET /api/v1/dashboard/summary

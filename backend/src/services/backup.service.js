@@ -1,4 +1,4 @@
-const { MOCK_BACKUPS } = require("../constants/backup.constants");
+const { MOCK_BACKUPS } = require("../config/constants");
 const {
   formatBackupList,
   formatBackupCreated,

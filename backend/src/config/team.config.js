@@ -1,4 +1,4 @@
-const { TEAM_DEFAULTS, VISIBILITY_OPTIONS } = require("../constants/team.constants");
+const { TEAM_DEFAULTS, VISIBILITY_OPTIONS } = require("../config/constants");
 
 const teamConfig = {
   defaultDescription: TEAM_DEFAULTS.DESCRIPTION,

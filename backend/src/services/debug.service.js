@@ -1,4 +1,4 @@
-const { COMMON_ISSUES, LOG_LEVELS } = require("../constants/debug.constants");
+const { COMMON_ISSUES, LOG_LEVELS } = require("../config/constants");
 const {
   formatCommonIssues,
   formatLogsInfo,

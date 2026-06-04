@@ -1,4 +1,4 @@
-const { DASHBOARD_DEFAULTS } = require("../constants/dashboard.constants");
+const { DASHBOARD_DEFAULTS } = require("../config/constants");
 
 const dashboardConfig = {
   recentActivityLimit: DASHBOARD_DEFAULTS.RECENT_ACTIVITY_LIMIT,

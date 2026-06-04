@@ -18,8 +18,8 @@
 const asyncHandler     = require("../utils/asyncHandler");
 const { sendResponse } = require("../utils/apiResponse");
 const userService      = require("../services/user.service");
-const { USER_MESSAGES } = require("../constants/user.constants");
-const HTTP_STATUS      = require("../constants/httpStatus");
+const { USER_MESSAGES } = require("../config/constants");
+const HTTP_STATUS      = require("../config/constants");
 
 // ─── getProfile ───────────────────────────────────────────────────────────────
 

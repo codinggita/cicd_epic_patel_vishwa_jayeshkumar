@@ -10,8 +10,8 @@ const {
 } = require("../utils/teamFormatter");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { TEAM_MESSAGES } = require("../constants/team.constants");
+const HTTP_STATUS = require("../config/constants");
+const { TEAM_MESSAGES } = require("../config/constants");
 
 /**
  * POST /api/v1/teams

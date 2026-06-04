@@ -1,5 +1,5 @@
 const Preferences = require("../models/preferences.model");
-const { PREFERENCES_DEFAULTS, PREFERENCES_MESSAGES } = require("../constants/preferences.constants");
+const { PREFERENCES_DEFAULTS, PREFERENCES_MESSAGES } = require("../config/constants");
 const preferencesConfig = require("../config/preferences.config");
 
 /**

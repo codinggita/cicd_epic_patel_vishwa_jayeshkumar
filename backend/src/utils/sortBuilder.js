@@ -24,7 +24,7 @@
  * @returns {Object}         - Mongoose sort object e.g. { views: -1 }
  */
 
-const { ALLOWED_SORT_FIELDS, SORT_ORDER } = require("../constants/workflow.constants");
+const { ALLOWED_SORT_FIELDS, SORT_ORDER } = require("../config/constants");
 
 // Default sort used as a safe fallback when invalid input is received
 const DEFAULT_SORT = { createdAt: SORT_ORDER.DESC };

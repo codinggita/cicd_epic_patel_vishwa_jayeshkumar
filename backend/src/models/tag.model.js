@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { TAG_LIMITS } = require("../constants/tag.constants");
+const { TAG_LIMITS } = require("../config/constants");
 
 /**
  * Tag Schema

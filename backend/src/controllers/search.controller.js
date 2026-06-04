@@ -1,7 +1,7 @@
 const { searchWorkflows, getAllTags, getWorkflowsByTag } = require("../services/search.service");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
+const HTTP_STATUS = require("../config/constants");
 
 /**
  * GET /api/v1/search

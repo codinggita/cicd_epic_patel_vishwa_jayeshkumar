@@ -1,5 +1,5 @@
 const Workflow = require("../models/workflow.model");
-const { RECOMMENDATION_DEFAULTS } = require("../constants/recommendation.constants");
+const { RECOMMENDATION_DEFAULTS } = require("../config/constants");
 const {
   formatRecommended,
   formatPopular,

@@ -1,0 +1,282 @@
+{
+  "info": {
+    "name": "StackOrbit API",
+    "description": "Postman collection for all StackOrbit backend endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "auth", "register"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"email\": \"user@example.com\", \"password\": \"password123\" }"
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "auth", "login"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"email\": \"user@example.com\", \"password\": \"password123\" }"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "item": [
+        {
+          "name": "Get All Comments",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/comments",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "comments"]
+            }
+          }
+        },
+        {
+          "name": "Get Comment By ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/comments/{{commentId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "comments", "{{commentId}}"]
+            }
+          }
+        },
+        {
+          "name": "Create Comment",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/comments",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "comments"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"workflowId\": \"<workflowId>\", \"content\": \"Your comment here\" }"
+            }
+          }
+        },
+        {
+          "name": "Update Comment",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/comments/{{commentId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "comments", "{{commentId}}"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"content\": \"Updated comment\" }"
+            }
+          }
+        },
+        {
+          "name": "Delete Comment",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/comments/{{commentId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "comments", "{{commentId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bookmarks",
+      "item": [
+        {
+          "name": "Add Bookmark",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/bookmarks",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "bookmarks"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"workflowId\": \"<workflowId>\" }"
+            }
+          }
+        },
+        {
+          "name": "Get All Bookmarks",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/bookmarks",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "bookmarks"]
+            }
+          }
+        },
+        {
+          "name": "Delete Bookmark",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/bookmarks/{{bookmarkId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "bookmarks", "{{bookmarkId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workflows",
+      "item": [
+        {
+          "name": "Get All Workflows",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/workflows",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "workflows"]
+            }
+          }
+        },
+        {
+          "name": "Get Workflow By ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/workflows/{{workflowId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "workflows", "{{workflowId}}"]
+            }
+          }
+        },
+        {
+          "name": "Create Workflow",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/workflows",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "workflows"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"title\": \"My Workflow\", \"description\": \"...\" }"
+            }
+          }
+        },
+        {
+          "name": "Update Workflow",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/workflows/{{workflowId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "workflows", "{{workflowId}}"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"title\": \"Updated Title\" }"
+            }
+          }
+        },
+        {
+          "name": "Delete Workflow",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/workflows/{{workflowId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "workflows", "{{workflowId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "Get All Notifications",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/notifications",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "notifications"]
+            }
+          }
+        },
+        {
+          "name": "Mark Notification Read",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/notifications/{{notificationId}}/read",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "notifications", "{{notificationId}}", "read"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "item": [
+        {
+          "name": "Dashboard Summary",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/analytics/summary",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "analytics", "summary"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

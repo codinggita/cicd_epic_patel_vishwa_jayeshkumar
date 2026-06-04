@@ -18,8 +18,8 @@ const {
 } = require("../services/infra.service");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { INFRA_MESSAGES } = require("../constants/infra.constants");
+const HTTP_STATUS = require("../config/constants");
+const { INFRA_MESSAGES } = require("../config/constants");
 
 /**
  * GET /api/v1/infra

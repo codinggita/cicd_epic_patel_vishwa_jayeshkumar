@@ -12,7 +12,7 @@
 
 const Bookmark = require("../models/bookmark.model");
 const Workflow = require("../models/workflow.model");
-const { BOOKMARK_MESSAGES, BOOKMARK_PAGINATION } = require("../constants/bookmark.constants");
+const { BOOKMARK_MESSAGES, BOOKMARK_PAGINATION } = require("../config/constants");
 
 // ─── addBookmark ──────────────────────────────────────────────────────────────
 

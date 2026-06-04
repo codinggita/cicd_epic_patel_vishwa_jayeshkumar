@@ -3,7 +3,7 @@ const {
   WORKFLOW_CATEGORIES,
   WORKFLOW_DIFFICULTY,
   WORKFLOW_DEFAULTS,
-} = require("../constants/workflow.constants");
+} = require("../config/constants");
 
 /**
  * Workflow Schema

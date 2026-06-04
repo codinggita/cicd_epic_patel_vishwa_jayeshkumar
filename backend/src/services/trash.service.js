@@ -1,6 +1,6 @@
 const Trash = require("../models/trash.model");
 const Workflow = require("../models/workflow.model");
-const { TRASH_MESSAGES, RESTORE_STATUS } = require("../constants/trash.constants");
+const { TRASH_MESSAGES, RESTORE_STATUS } = require("../config/constants");
 
 /**
  * Moves a workflow to trash by creating a trash record.

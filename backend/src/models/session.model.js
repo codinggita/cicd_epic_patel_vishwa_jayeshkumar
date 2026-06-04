@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const {
   SESSION_STATUS,
   SESSION_DEFAULTS,
-} = require("../constants/session.constants");
+} = require("../config/constants");
 
 /**
  * Session Schema

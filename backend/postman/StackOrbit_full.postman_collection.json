@@ -1,0 +1,2638 @@
+{
+  "info": {
+    "name": "StackOrbit Full Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "activity",
+      "item": [
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /:userId",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:userId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{userId}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "admin",
+      "item": [
+        {
+          "name": "GET /users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/users",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "users"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /users/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/users/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "users",
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "analytics",
+      "item": [
+        {
+          "name": "GET /summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/summary",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "summary"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /latest",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/latest",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "latest"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "archive",
+      "item": [
+        {
+          "name": "POST /:workflowId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH /:workflowId/restore",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId/restore",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}",
+                "restore"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "POST /register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/register",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "register"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST /login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/login",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "login"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/profile",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "profile"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "backup",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "category",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "comment",
+      "item": [
+        {
+          "name": "POST /:workflowId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /:workflowId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PATCH /:commentId/update",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:commentId/update",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{commentId}}",
+                "update"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:commentId",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:commentId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{commentId}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "item": [
+        {
+          "name": "GET /summary",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/summary",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "summary"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /activity",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/activity",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "activity"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /stats",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/stats",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "stats"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "dataset",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "debug",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /random",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/random",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "random"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /latest",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/latest",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "latest"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /trending",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/trending",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "trending"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH /:id",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "export",
+      "item": [
+        {
+          "name": "GET /workflows/:id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/workflows/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "workflows",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /workflows/:id/summary",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/workflows/:id/summary",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "workflows",
+                "{{id}}",
+                "summary"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "favorite",
+      "item": [
+        {
+          "name": "POST /:workflowId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:workflowId",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "history",
+      "item": [
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /:workflowId",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "infra",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "GET /category/:category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/category/:category",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "category",
+                "{{category}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /platform/:platform",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/platform/:platform",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "platform",
+                "{{platform}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH /:id/archive",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id/archive",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}",
+                "archive"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH /:id/restore",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id/restore",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}",
+                "restore"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "log",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "GET /latest",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/latest",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "latest"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /errors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/errors",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "errors"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "monitoring",
+      "item": [
+        {
+          "name": "GET /uptime",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/uptime",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "uptime"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /cpu",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/cpu",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "cpu"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /memory",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/memory",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "memory"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "notification",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "PATCH /:id/read",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id/read",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}",
+                "read"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "preferences",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "PATCH /",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "recommendation",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "GET /popular",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/popular",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "popular"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "report",
+      "item": [
+        {
+          "name": "GET /workflows/:id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/workflows/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "workflows",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /workflows/:id/summary",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/workflows/:id/summary",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "workflows",
+                "{{id}}",
+                "summary"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "review",
+      "item": [
+        {
+          "name": "POST /:workflowId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /:workflowId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PATCH /:reviewId",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:reviewId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{reviewId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:reviewId",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:reviewId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{reviewId}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "GET /random",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/random",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "random"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /latest",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/latest",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "latest"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /trending",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/trending",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "trending"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "session",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "PATCH /",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "share",
+      "item": [
+        {
+          "name": "POST /:workflowId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "system",
+      "item": [
+        {
+          "name": "GET /status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/status",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "status"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /uptime",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/uptime",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "uptime"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /memory",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/memory",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "memory"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /environment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/environment",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "environment"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tag",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "team",
+      "item": [
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "PATCH /:id/members",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id/members",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}",
+                "members"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "template",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "trash",
+      "item": [
+        {
+          "name": "POST /:workflowId",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH /:workflowId/restore",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId/restore",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}",
+                "restore"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "upload",
+      "item": [
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "GET /me",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/me",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "me"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PATCH /me",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/me",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "me"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "version",
+      "item": [
+        {
+          "name": "GET /:workflowId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:workflowId",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{workflowId}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "workflow",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            }
+          }
+        },
+        {
+          "name": "GET /random",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/random",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "random"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT /:id",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH /:id",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE /:id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{JWT_TOKEN}}"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/:id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "workflowQuery",
+      "item": [
+        {
+          "name": "GET /latest",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/latest",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "latest"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /popular",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/popular",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "popular"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /recommended",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/recommended",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "recommended"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /trending",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/api/trending",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "trending"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "yaml",
+      "item": [
+        {
+          "name": "POST /validate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/validate",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "validate"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST /format",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/api/format",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "format"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sampleKey\": \"sampleValue\"\n}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

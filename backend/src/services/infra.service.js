@@ -6,7 +6,7 @@
  */
 
 const Infrastructure = require("../models/infra.model");
-const { INFRA_MESSAGES } = require("../constants/infra.constants");
+const { INFRA_MESSAGES } = require("../config/constants");
 
 /**
  * Fetches all infrastructure guides from the database.

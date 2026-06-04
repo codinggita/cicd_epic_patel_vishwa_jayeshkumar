@@ -5,8 +5,8 @@
  * Must be mounted AFTER the `protect` middleware.
  */
 
-const { ADMIN_MESSAGES } = require("../constants/admin.constants");
-const HTTP_STATUS = require("../constants/httpStatus");
+const { ADMIN_MESSAGES } = require("../config/constants");
+const HTTP_STATUS = require("../config/constants");
 
 /**
  * Middleware to ensure the authenticated user has an 'admin' role.

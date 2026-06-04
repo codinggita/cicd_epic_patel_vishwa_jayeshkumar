@@ -1,5 +1,5 @@
 const Workflow = require("../models/workflow.model");
-const { WORKFLOW_MESSAGES, RUN_STATUS } = require("../constants/workflow.constants");
+const { WORKFLOW_MESSAGES, RUN_STATUS } = require("../config/constants");
 
 /**
  * Fetches all workflows from the database.

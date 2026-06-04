@@ -5,7 +5,7 @@
  * Ensures all API responses follow a standardized format.
  */
 
-const { INFRA_MESSAGES } = require("../constants/infra.constants");
+const { INFRA_MESSAGES } = require("../config/constants");
 
 /**
  * Formats a single infrastructure guide response.

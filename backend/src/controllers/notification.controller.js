@@ -4,8 +4,8 @@ const {
 } = require("../services/notification.service");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { NOTIFICATION_MESSAGES } = require("../constants/notification.constants");
+const HTTP_STATUS = require("../config/constants");
+const { NOTIFICATION_MESSAGES } = require("../config/constants");
 const { formatNotifications, formatNotification } = require("../utils/notificationFormatter");
 
 /**

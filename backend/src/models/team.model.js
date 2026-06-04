@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { TEAM_DEFAULTS, VISIBILITY_OPTIONS } = require("../constants/team.constants");
+const { TEAM_DEFAULTS, VISIBILITY_OPTIONS } = require("../config/constants");
 
 /**
  * Team Schema

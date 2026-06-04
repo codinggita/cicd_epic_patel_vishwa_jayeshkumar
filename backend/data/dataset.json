@@ -1,0 +1,34 @@
+{
+  "workflows": [
+    {
+      "instruction": "Explain github CI/CD configuration and best practices",
+      "output": "Starter Workflows...",
+      "topic": "github-actions",
+      "difficulty": "intermediate"
+    },
+    {
+      "instruction": "Demonstrate Infrastructure as Code CI/CD with Terraform",
+      "output": "CircleCI Docs...",
+      "topic": "testing",
+      "difficulty": "intermediate"
+    },
+    {
+      "instruction": "Show me how to configure docker for CI/CD pipelines",
+      "output": "Changelog...",
+      "topic": "docker",
+      "difficulty": "intermediate"
+    },
+    {
+      "instruction": "Explain Jenkins pipeline setup",
+      "output": "Pipeline Global Library...",
+      "topic": "jenkins",
+      "difficulty": "intermediate"
+    },
+    {
+      "instruction": "Explain how to configure GitHub for CI/CD automation",
+      "output": "Pipeline Global Library...",
+      "topic": "github-actions",
+      "difficulty": "intermediate"
+    }
+  ]
+}

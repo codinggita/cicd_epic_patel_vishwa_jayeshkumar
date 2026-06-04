@@ -6,7 +6,7 @@
  */
 
 const Session = require("../models/session.model");
-const { SESSION_STATUS } = require("../constants/session.constants");
+const { SESSION_STATUS } = require("../config/constants");
 
 /**
  * Fetches all active sessions for a specific user.

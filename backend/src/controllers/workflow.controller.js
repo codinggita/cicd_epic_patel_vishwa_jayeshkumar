@@ -17,8 +17,8 @@ const {
 } = require("../services/workflow.service");
 const { sendResponse } = require("../utils/apiResponse");
 const asyncHandler = require("../utils/asyncHandler");
-const HTTP_STATUS = require("../constants/httpStatus");
-const { WORKFLOW_MESSAGES } = require("../constants/workflow.constants");
+const HTTP_STATUS = require("../config/constants");
+const { WORKFLOW_MESSAGES } = require("../config/constants");
 
 /**
  * GET /api/v1/workflows

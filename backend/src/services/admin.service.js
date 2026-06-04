@@ -6,7 +6,7 @@
  */
 
 const User = require("../models/user.model");
-const { ADMIN_MESSAGES } = require("../constants/admin.constants");
+const { ADMIN_MESSAGES } = require("../config/constants");
 
 /**
  * Fetches all registered users, excluding password hashes.
