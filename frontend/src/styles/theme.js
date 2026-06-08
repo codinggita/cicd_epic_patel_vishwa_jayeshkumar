@@ -8,28 +8,28 @@ export const theme = {
   // Color Tokens
   colors: {
     brand: {
-      primary: '#6D28D9',       // Royal Violet
-      secondary: '#14B8A6',     // Teal
-      accent: '#F97316',        // Burnt Orange
-      lightBg: '#FFFDF8',       // Warm Ivory
-      darkBg: '#0A0915',        // Space Obsidian
+      primary: '#7C3AED',       // Electric Violet
+      secondary: '#F59E0B',     // Amber Gold
+      accent: '#14B8A6',        // Ocean Teal
+      lightBg: '#FFF8F0',       // Warm Cream
+      darkBg: '#0B0A11',        // Obsidian Dark
       slateText: '#334155',     // Cool Slate
     },
     light: {
-      background: '#FFFDF8',
+      background: '#FFF8F0',
       surface: '#FFFFFF',
-      surfaceGlass: 'rgba(255, 253, 248, 0.75)',
-      border: 'rgba(109, 40, 217, 0.08)',
+      surfaceGlass: 'rgba(255, 248, 240, 0.75)',
+      border: 'rgba(124, 58, 237, 0.08)',
       textPrimary: '#334155',   // Slate-700
       textSecondary: '#64748B', // Slate-500
       textMuted: '#94A3B8',     // Slate-400
-      accentGlow: 'rgba(109, 40, 217, 0.04)',
+      accentGlow: 'rgba(124, 58, 237, 0.04)',
     },
     dark: {
-      background: '#0A0915',
-      surface: '#121124',
-      surfaceGlass: 'rgba(18, 17, 36, 0.7)',
-      border: 'rgba(20, 184, 166, 0.1)',
+      background: '#0B0A11',
+      surface: '#161520',
+      surfaceGlass: 'rgba(22, 21, 32, 0.75)',
+      border: 'rgba(124, 58, 237, 0.12)',
       textPrimary: '#F1F5F9',   // Slate-100
       textSecondary: '#94A3B8', // Slate-400
       textMuted: '#64748B',     // Slate-500
@@ -106,9 +106,9 @@ export const theme = {
     sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
     md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
     lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-    premium: '0 10px 40px -10px rgba(109, 40, 217, 0.08)',
-    premiumHover: '0 20px 50px -10px rgba(109, 40, 217, 0.15)',
-    glassLight: '0 8px 32px 0 rgba(109, 40, 217, 0.04)',
+    premium: '0 10px 40px -10px rgba(124, 58, 237, 0.08)',
+    premiumHover: '0 20px 50px -10px rgba(124, 58, 237, 0.15)',
+    glassLight: '0 8px 32px 0 rgba(124, 58, 237, 0.04)',
     glassDark: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
     inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
   },

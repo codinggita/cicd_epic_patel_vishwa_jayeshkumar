@@ -16,11 +16,11 @@ function DashboardLayout() {
   };
 
   return (
-    <div className="flex min-h-screen bg-[#FFFDF8] dark:bg-[#0A0915] text-[#334155] dark:text-[#F1F5F9] transition-colors duration-300 font-sans">
+    <div className="flex min-h-screen bg-[#FFF8F0] dark:bg-[#0B0A11] text-[#334155] dark:text-[#F1F5F9] transition-colors duration-300 font-sans">
       {/* Backdrop cover overlay for mobile menu */}
       {mobileSidebarOpen && (
         <div
-          className="fixed inset-0 z-40 bg-slate-900/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden"
+          className="fixed inset-0 z-40 bg-slate-900/20 backdrop-blur-md transition-opacity duration-300 lg:hidden"
           onClick={() => setMobileSidebarOpen(false)}
         />
       )}

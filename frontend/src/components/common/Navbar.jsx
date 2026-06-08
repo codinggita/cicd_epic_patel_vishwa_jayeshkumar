@@ -53,9 +53,9 @@ function Navbar({ isSidebarCollapsed, onToggleSidebar, onOpenMobileSidebar }) {
             <Menu className="h-5 w-5" />
           </button>
           
-          <div className="hidden lg:flex items-center gap-1 bg-[#6D28D9]/5 px-3 py-1.5 rounded-lg border border-brand-primary/10">
+          <div className="hidden lg:flex items-center gap-1 bg-[#7C3AED]/5 px-3 py-1.5 rounded-lg border border-[#7C3AED]/10">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span className="text-[10px] font-bold text-brand-primary tracking-wider uppercase">Cluster: orbital-prd</span>
+            <span className="text-[10px] font-bold text-[#7C3AED] dark:text-[#C084FC] tracking-wider uppercase">Cluster: orbital-prd</span>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ function Navbar({ isSidebarCollapsed, onToggleSidebar, onOpenMobileSidebar }) {
             type="text"
             placeholder="Search workflows, metrics..."
             onChange={handleSearchChange}
-            className="w-full rounded-xl border border-slate-200/65 bg-slate-50/40 py-2 pl-10 pr-4 text-xs text-brand-slateText outline-none ring-offset-2 transition-all focus:border-brand-primary focus:bg-white dark:border-slate-800/80 dark:bg-slate-900/30 dark:text-slate-350 dark:focus:border-brand-secondary"
+            className="w-full rounded-xl border border-slate-200/65 bg-slate-50/40 py-2 pl-10 pr-4 text-xs text-brand-slateText outline-none ring-offset-2 transition-all focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 focus:bg-white dark:border-slate-800/80 dark:bg-slate-900/30 dark:text-slate-350 dark:focus:border-[#F59E0B]"
           />
         </div>
 
@@ -92,14 +92,14 @@ function Navbar({ isSidebarCollapsed, onToggleSidebar, onOpenMobileSidebar }) {
               className="relative rounded-xl p-2.5 text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-900 border border-slate-150/40 dark:border-slate-800 transition-all"
             >
               <Bell className="h-4 w-4" />
-              <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-brand-accent"></span>
+              <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-[#14B8A6]"></span>
             </button>
 
             {showNotifications && (
               <div className="absolute right-0 mt-3 w-80 rounded-2xl glass-card border border-slate-200/50 dark:border-slate-800/80 p-4 shadow-xl z-50 animate-fadeIn">
                 <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800/85 pb-2.5">
                   <h4 className="font-display font-bold text-xs text-brand-slateText dark:text-white uppercase tracking-wider">Alert Center</h4>
-                  <button className="text-[10px] text-brand-primary dark:text-[#A78BFA] font-medium hover:underline">Mark all read</button>
+                  <button className="text-[10px] text-[#7C3AED] dark:text-[#C084FC] font-medium hover:underline">Mark all read</button>
                 </div>
                 <div className="mt-3 space-y-3">
                   <div className="flex items-start gap-2.5 p-2 rounded-lg hover:bg-slate-100/40 dark:hover:bg-slate-900/40 transition-colors">
@@ -137,7 +137,7 @@ function Navbar({ isSidebarCollapsed, onToggleSidebar, onOpenMobileSidebar }) {
               <img
                 src={user?.avatar}
                 alt={user?.name}
-                className="h-8 w-8 rounded-lg object-cover ring-2 ring-brand-primary/15"
+                className="h-8 w-8 rounded-lg object-cover ring-2 ring-[#7C3AED]/20 hover:ring-[#7C3AED]/40 transition-all"
               />
               <div className="hidden sm:block text-left">
                 <div className="text-xs font-bold text-brand-slateText dark:text-slate-200 leading-none">{user?.name}</div>
@@ -150,7 +150,7 @@ function Navbar({ isSidebarCollapsed, onToggleSidebar, onOpenMobileSidebar }) {
                 <Link
                   to="/profile"
                   onClick={() => setShowProfileDropdown(false)}
-                  className="flex items-center gap-2 px-3.5 py-2.5 text-xs text-brand-slateText dark:text-slate-200 hover:bg-[#6D28D9]/5 dark:hover:bg-[#6D28D9]/10 rounded-xl transition-all font-semibold"
+                  className="flex items-center gap-2 px-3.5 py-2.5 text-xs text-brand-slateText dark:text-slate-200 hover:bg-[#7C3AED]/5 dark:hover:bg-[#7C3AED]/10 rounded-xl transition-all font-semibold"
                 >
                   <User className="h-4 w-4 text-slate-450" />
                   My Identity
@@ -158,7 +158,7 @@ function Navbar({ isSidebarCollapsed, onToggleSidebar, onOpenMobileSidebar }) {
                 <Link
                   to="/settings"
                   onClick={() => setShowProfileDropdown(false)}
-                  className="flex items-center gap-2 px-3.5 py-2.5 text-xs text-brand-slateText dark:text-slate-200 hover:bg-[#6D28D9]/5 dark:hover:bg-[#6D28D9]/10 rounded-xl transition-all font-semibold"
+                  className="flex items-center gap-2 px-3.5 py-2.5 text-xs text-brand-slateText dark:text-slate-200 hover:bg-[#7C3AED]/5 dark:hover:bg-[#7C3AED]/10 rounded-xl transition-all font-semibold"
                 >
                   <SettingsIcon className="h-4 w-4 text-slate-450" />
                   Cluster Config

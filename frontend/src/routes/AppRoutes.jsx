@@ -3,6 +3,10 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import DashboardLayout from '../layouts/DashboardLayout';
 
+/**
+ * StackOrbit Premium Theme Router Configuration
+ */
+
 // Lazy loaded page components
 const Dashboard = lazy(() => import('../pages/Dashboard'));
 const Users = lazy(() => import('../pages/Users'));
