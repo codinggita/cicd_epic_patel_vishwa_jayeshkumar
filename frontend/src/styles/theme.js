@@ -8,32 +8,32 @@ export const theme = {
   // Color Tokens
   colors: {
     brand: {
-      primary: '#7C3AED',       // Electric Violet
-      secondary: '#F59E0B',     // Amber Gold
-      accent: '#14B8A6',        // Ocean Teal
-      lightBg: '#FFF8F0',       // Warm Cream
-      darkBg: '#0B0A11',        // Obsidian Dark
-      slateText: '#334155',     // Cool Slate
+      primary: '#059669',       // Jade Emerald
+      secondary: '#D97706',     // Bronze Gold
+      accent: '#EAB308',        // Warm Yellow
+      lightBg: '#FAF7F0',       // Warm Alabaster
+      darkBg: '#0F1410',        // Forest Obsidian
+      slateText: '#27272A',     // Charcoal Slate
     },
     light: {
-      background: '#FFF8F0',
+      background: '#FAF7F0',
       surface: '#FFFFFF',
-      surfaceGlass: 'rgba(255, 248, 240, 0.75)',
-      border: 'rgba(124, 58, 237, 0.08)',
-      textPrimary: '#334155',   // Slate-700
-      textSecondary: '#64748B', // Slate-500
-      textMuted: '#94A3B8',     // Slate-400
-      accentGlow: 'rgba(124, 58, 237, 0.04)',
+      surfaceGlass: 'rgba(250, 247, 240, 0.75)',
+      border: 'rgba(5, 150, 105, 0.08)',
+      textPrimary: '#27272A',   // Zinc-800
+      textSecondary: '#52525B', // Zinc-600
+      textMuted: '#71717A',     // Zinc-500
+      accentGlow: 'rgba(5, 150, 105, 0.04)',
     },
     dark: {
-      background: '#0B0A11',
-      surface: '#161520',
-      surfaceGlass: 'rgba(22, 21, 32, 0.75)',
-      border: 'rgba(124, 58, 237, 0.12)',
-      textPrimary: '#F1F5F9',   // Slate-100
-      textSecondary: '#94A3B8', // Slate-400
-      textMuted: '#64748B',     // Slate-500
-      accentGlow: 'rgba(20, 184, 166, 0.08)',
+      background: '#0F1410',
+      surface: '#151C17',
+      surfaceGlass: 'rgba(21, 28, 23, 0.75)',
+      border: 'rgba(5, 150, 105, 0.15)',
+      textPrimary: '#F4F4F5',   // Zinc-100
+      textSecondary: '#A1A1AA', // Zinc-400
+      textMuted: '#71717A',     // Zinc-500
+      accentGlow: 'rgba(5, 150, 105, 0.08)',
     }
   },
 
@@ -106,9 +106,9 @@ export const theme = {
     sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
     md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
     lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-    premium: '0 10px 40px -10px rgba(124, 58, 237, 0.08)',
-    premiumHover: '0 20px 50px -10px rgba(124, 58, 237, 0.15)',
-    glassLight: '0 8px 32px 0 rgba(124, 58, 237, 0.04)',
+    premium: '0 10px 40px -10px rgba(5, 150, 105, 0.08)',
+    premiumHover: '0 20px 50px -10px rgba(5, 150, 105, 0.15)',
+    glassLight: '0 8px 32px 0 rgba(5, 150, 105, 0.04)',
     glassDark: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
     inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
   },

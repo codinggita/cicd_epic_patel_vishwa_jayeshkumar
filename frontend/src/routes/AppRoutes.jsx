@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import DashboardLayout from '../layouts/DashboardLayout';
 
 /**
- * StackOrbit Premium Theme Router Configuration
+ * StackOrbit Premium Theme Router Configuration (Emerald & Gold Theme)
  */
 
 // Lazy loaded page components

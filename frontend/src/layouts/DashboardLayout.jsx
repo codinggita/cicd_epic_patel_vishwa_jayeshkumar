@@ -16,7 +16,7 @@ function DashboardLayout() {
   };
 
   return (
-    <div className="flex min-h-screen bg-[#FFF8F0] dark:bg-[#0B0A11] text-[#334155] dark:text-[#F1F5F9] transition-colors duration-300 font-sans">
+    <div className="flex min-h-screen bg-[#FAF7F0] dark:bg-[#0F1410] text-[#27272A] dark:text-[#F1F5F9] transition-colors duration-300 font-sans">
       {/* Backdrop cover overlay for mobile menu */}
       {mobileSidebarOpen && (
         <div

@@ -21,12 +21,12 @@ function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClose }) {
         {/* Header Branding */}
         <div className="flex items-center justify-between h-[60px] px-2">
           <Link to="/" onClick={onMobileClose} className="flex items-center gap-2.5 group">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-[#7C3AED] to-[#F59E0B] flex items-center justify-center text-white shadow-premium group-hover:rotate-12 transition-transform duration-300">
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-[#059669] to-[#D97706] flex items-center justify-center text-white shadow-premium group-hover:rotate-12 transition-transform duration-300">
               <Orbit className="h-5 w-5" />
             </div>
             {(!isCollapsed || mobileOpen) && (
               <span className="font-display font-extrabold text-lg text-brand-slateText dark:text-white tracking-tight">
-                Stack<span className="bg-gradient-to-r from-[#7C3AED] to-[#F59E0B] bg-clip-text text-transparent">Orbit</span>
+                Stack<span className="bg-gradient-to-r from-[#059669] to-[#D97706] bg-clip-text text-transparent">Orbit</span>
               </span>
             )}
           </Link>
@@ -54,7 +54,7 @@ function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClose }) {
                 className={({ isActive }) =>
                   `flex items-center gap-3.5 px-4 py-3 text-xs font-semibold rounded-xl transition-all duration-300 relative group ${
                     isActive
-                      ? 'bg-gradient-to-r from-[#7C3AED]/10 to-[#F59E0B]/5 text-brand-primary dark:text-[#C084FC] border border-[#7C3AED]/10'
+                      ? 'bg-gradient-to-r from-[#059669]/10 to-[#D97706]/5 text-brand-primary dark:text-[#34D399] border border-[#059669]/10'
                       : 'text-slate-400 dark:text-slate-400 hover:text-brand-slateText dark:hover:text-white hover:bg-slate-100/40 dark:hover:bg-slate-900/40 border border-transparent'
                   }`
                 }
@@ -63,11 +63,11 @@ function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClose }) {
                   <>
                     {/* Active side indicator pill */}
                     {isActive && (
-                      <div className="absolute left-0 top-1/4 bottom-1/4 w-[3.5px] bg-gradient-to-b from-[#7C3AED] to-[#F59E0B] rounded-r-full shadow-[0_0_8px_rgba(124,58,237,0.4)]"></div>
+                      <div className="absolute left-0 top-1/4 bottom-1/4 w-[3.5px] bg-gradient-to-b from-[#059669] to-[#D97706] rounded-r-full shadow-[0_0_8px_rgba(5,150,105,0.4)]"></div>
                     )}
                     
                     <Icon className={`h-4.5 w-4.5 flex-shrink-0 transition-transform group-hover:scale-110 duration-300 ${
-                      isActive ? 'text-brand-primary dark:text-[#C084FC]' : 'text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200'
+                      isActive ? 'text-brand-primary dark:text-[#34D399]' : 'text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200'
                     }`} />
                     
                     {(!isCollapsed || mobileOpen) && (
@@ -103,11 +103,11 @@ function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClose }) {
 
         {/* Small Profile Preview */}
         {(!isCollapsed || mobileOpen) ? (
-          <div className="flex items-center gap-3 p-2.5 rounded-2xl bg-white/60 dark:bg-slate-950/40 border border-[#7C3AED]/10 dark:border-slate-800/60 shadow-sm backdrop-blur-md">
+          <div className="flex items-center gap-3 p-2.5 rounded-2xl bg-white/60 dark:bg-slate-955/40 border border-[#059669]/10 dark:border-slate-800/60 shadow-sm backdrop-blur-md">
             <img
               src={user?.avatar}
               alt={user?.name}
-              className="h-9 w-9 rounded-xl object-cover ring-2 ring-[#7C3AED]/20 hover:ring-[#7C3AED]/40 transition-all"
+              className="h-9 w-9 rounded-xl object-cover ring-2 ring-[#059669]/20 hover:ring-[#059669]/40 transition-all"
             />
             <div className="text-left overflow-hidden">
               <div className="text-xs font-bold text-brand-slateText dark:text-slate-200 truncate leading-none">{user?.name}</div>
@@ -119,7 +119,7 @@ function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClose }) {
             <img
               src={user?.avatar}
               alt={user?.name}
-              className="h-9 w-9 rounded-xl object-cover ring-2 ring-[#7C3AED]/20"
+              className="h-9 w-9 rounded-xl object-cover ring-2 ring-[#059669]/20"
             />
           </div>
         )}
@@ -141,7 +141,7 @@ function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClose }) {
 
       {/* Mobile drawer slide-over panel */}
       <aside
-        className={`fixed bottom-0 top-0 z-50 flex w-72 max-w-full flex-col bg-[#FFF8F0] dark:bg-[#0B0A11] border-r border-slate-200/50 dark:border-slate-800/80 transition-all duration-300 lg:hidden shadow-2xl ${
+        className={`fixed bottom-0 top-0 z-50 flex w-72 max-w-full flex-col bg-[#FAF7F0] dark:bg-[#0F1410] border-r border-slate-200/50 dark:border-slate-800/80 transition-all duration-300 lg:hidden shadow-2xl ${
           mobileOpen ? 'left-0' : '-left-[320px]'
         }`}
       >
